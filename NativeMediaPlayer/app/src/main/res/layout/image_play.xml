@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed000000">
+
+    <ImageView
+        android:id="@+id/image_play_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pause_64px"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_visibility"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imgbtn_image_enlarge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/zoom_in_64px"
+            android:padding="10dp"
+            android:background="@drawable/color_selected_bg"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_image_lesson"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/zoom_out_64px"
+            android:padding="10dp"
+            android:background="@drawable/color_selected_bg"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_image_scale"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/rotate_cw_64px"
+            android:padding="10dp"
+            android:background="@drawable/color_selected_bg"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_image_previous"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/arrow_left_64px"
+            android:padding="10dp"
+            android:background="@drawable/color_selected_bg"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_image_next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/arrow_right_64px"
+            android:padding="10dp"
+            android:background="@drawable/color_selected_bg"/>
+
+    </LinearLayout>
+
+</FrameLayout>
